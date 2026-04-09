@@ -15,6 +15,13 @@ public class CheckGuest {
 
         // definisco scanner
         Scanner input = new Scanner(System.in);
+
+        // prendo il valore in ingresso normalizzato
+        // con trim tolgo gli spazi iniziali e finali
+        // con replace prendo tutti gli spazi tra i caratteri(così se ci sono piu spazi
+        // non ho problemi)
+        // e li vado a ripiazzare con uno spazio singolo come sono salvati nel nostro
+        // array
         String inputGuest = input.nextLine().trim().replaceAll("\\s+", " ");
         // System.out.println(inputGuest);
 
